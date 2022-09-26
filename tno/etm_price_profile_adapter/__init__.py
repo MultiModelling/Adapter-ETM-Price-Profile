@@ -47,7 +47,7 @@ def create_app(object_name):
                      "owner": "localhost", "version": "1.0", "max_workers": 1}
 
     try:
-        r = requests.post('http://172.17.0.1:9200/registry/', json=registry_data)
+        r = requests.post('http://mmvib-registry:9200/registry/', json=registry_data)
         r.raise_for_status()
     except requests.exceptions.HTTPError as e:
         print(e.response.text)
