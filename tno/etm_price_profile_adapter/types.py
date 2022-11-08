@@ -28,6 +28,7 @@ class ETMConfig:
 class ETMAdapterConfig:
     etm_config: ETMConfig
     output_file_path: Optional[str] = None
+    base_path: Optional[str] = None
 
 
 @dataclass
