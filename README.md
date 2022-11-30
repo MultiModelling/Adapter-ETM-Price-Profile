@@ -8,6 +8,11 @@ The project is based on TNO's Flask REST API template. For more information, see
 Use: `docker-compose build` to build the image
 Run the image using `docker-compose up -d`.
 
+## Test the model adapter locally
+
+1. create a ```.env``` file based on the ```.env.template``` file
+2. run the ```tno\etm_price_profile_adapter\main.py``` application from the directory where the ```.env``` file is stored
+3. run the ```test_etm.py``` application from the ```test``` directory
 
 ## Flask REST API Template
 
