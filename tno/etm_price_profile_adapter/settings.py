@@ -40,6 +40,10 @@ class EnvSettings:
     def minio_secret_key():
         return os.getenv("MINIO_SECRET_KEY", "")
 
+    @staticmethod
+    def registry_endpoint():
+        return os.getenv("REGISTRY_ENDPOINT", None)
+
 
 class Config(object):
     """Generic config for all environments."""
