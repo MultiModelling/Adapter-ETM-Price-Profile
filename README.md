@@ -11,7 +11,8 @@ Run the image using `docker-compose up -d`.
 ## Test the model adapter locally
 
 1. create a ```.env``` file based on the ```.env.template``` file
-2. run the ```test_etm.py``` application from the ```test``` directory
+2. run 'pip install -e .'
+3. run the ```test_etm.py``` application from the ```test``` directory
 
 ## Flask REST API Template
 
