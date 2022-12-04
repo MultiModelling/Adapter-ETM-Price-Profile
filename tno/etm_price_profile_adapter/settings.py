@@ -17,7 +17,7 @@ class EnvSettings:
 
     @staticmethod
     def flask_server_port() -> int:
-        return 9201
+        return os.getenv("FLASK_RUN_PORT", 9201)
 
     @staticmethod
     def is_production():

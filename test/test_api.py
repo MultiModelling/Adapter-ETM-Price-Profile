@@ -27,7 +27,8 @@ post_body = {
         "path": "scenarios/{}/curves/electricity_price.csv",
         "scenario_ID": "763305",
     },
-    "output_file_path": "bedrijventerreinommoord/Scenario_1_II3050_Nationale_Sturing/Trial_1/MM_workflow_run_1/ETM_price_profile_adapter/elektrictitetisprijs_profiel.csv"
+    "base_path": "bedrijventerreinommoord/Scenario_1_II3050_Nationale_Sturing/Trial_1/MM_workflow_run_1/",
+    "output_file_path": "ETM_price_profile_adapter/elektrictitetisprijs_profiel.csv"
 }
 
 res = requests.post(api_endpoint + '/model/initialize/' + model_run_id, json=post_body)
